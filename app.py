@@ -15,7 +15,7 @@ def loadPage():
     return render_template('home.html', query='')
 
 
-@app.route("/", methods=['POST'])
+@app.route("/predict", methods=['POST'])
 def cancerPrediction():
     # check jupyter notebook, the below code is copied from there
 
