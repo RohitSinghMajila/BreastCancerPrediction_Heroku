@@ -10,9 +10,9 @@ app = Flask("__name__")
 q = ""
 
 
-@app.route("/")
-def loadPage():
-    return render_template('home.html', query='')
+# @app.route("/")
+# def loadPage():
+#    return render_template('home.html', query='')
 
 
 @app.route("/predict", methods=['POST'])
