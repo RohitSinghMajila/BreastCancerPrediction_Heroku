@@ -18,7 +18,7 @@ def loadPage():
 
 
 @app.route("/predict", methods=['POST'])
-def cancerPrediction():
+def predict():
     # check jupyter notebook, the below code is copied from there
 
     dataset_url = "https://raw.githubusercontent.com/apogiatzis/breast-cancer-azure-ml-notebook/master/breast-cancer-data.csv"
