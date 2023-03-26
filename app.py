@@ -22,7 +22,7 @@ def cancerPrediction():
     dataset_url = "https://raw.githubusercontent.com/apogiatzis/breast-cancer-azure-ml-notebook/master/breast-cancer-data.csv"
     df = pd.read_csv(dataset_url)
 
-    filename = r"C:\Users\majil\Desktop\study\Programming\Flask\jupyter notebook_ML model deploy (Satyjit Pattnaik)\model.sav"
+    filename = "model.sav"
     model = pickle.load(open(filename, 'rb'))
 
     inputQuery1 = request.form['query1']
